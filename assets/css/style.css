@@ -58,6 +58,7 @@ li{
 /*Header*/
 .header{
     background-color:var(--nav-background-color);
+    margin-bottom:12.8rem;
 }
 .header-Inner{
     height:8rem;
@@ -142,6 +143,38 @@ nav{
 }
 .secondaryBtn:hover{
     background-color: #f3b91a;
+}
+
+/*Posts*/
+.section-post{
+    display:flex;
+    gap:3.2rem;
+    font-family: var(--bold-font-family);
+    color:var(--main-boldText-color);
+}
+.section-first--inner{
+    width:100%;
+    max-width:73.3rem;
+    margin-top:3.2rem;
+    border:0.1rem solid rgba(109, 110, 118, 0.1);
+    padding:3.2rem;
+}
+.section-second--inner{
+    margin-top:3.2rem;
+}
+.authorPost{
+    color:#592EA9;
+}
+.section-Posts{
+    width:100%;
+    max-width:51.7rem;
+    padding:3.2rem 11.6rem 2.5rem 3.2rem;
+}
+.section-Posts:hover{
+    background-color:#FBF6EA;
+}
+.active{
+    background-color:#FBF6EA;
 }
 /*Media*/
 @media(max-width:1200px){
