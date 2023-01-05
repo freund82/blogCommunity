@@ -5,7 +5,7 @@ html{
 body{
     width:100%;
     max-width:144rem;
-    margin:0;
+    margin:0 auto;
     padding:0;
     font-family: 'Inter', sans-serif;
     color:#6D6E76;
@@ -35,6 +35,9 @@ p{
     --button-secondary-background-color:#FFD050;
     --links-color:#592EA9;
     --hover-color:#F4F0F8;
+    --posts-author-color:#4C4C4C;
+    --featured-smallText-color:#6D6E76;
+
 }
 
 .container{
@@ -148,9 +151,11 @@ nav{
 /*Posts*/
 .section-post{
     display:flex;
-    gap:3.2rem;
+    gap:3rem;
+    flex-wrap:wrap;
     font-family: var(--bold-font-family);
     color:var(--main-boldText-color);
+    margin-bottom:12.8rem;
 }
 .section-first--inner{
     width:100%;
@@ -163,7 +168,7 @@ nav{
     margin-top:3.2rem;
 }
 .authorPost{
-    color:#592EA9;
+    color:var(--links-color);
 }
 .section-Posts{
     width:100%;
@@ -176,7 +181,126 @@ nav{
 .active{
     background-color:#FBF6EA;
 }
+.allPosts-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.allPosts{
+    display:block;
+    color:var(--links-color);
+    font-size:1.6rem;
+}
+.postBlock-author{
+    font-size:1.4rem;
+    color:var(--posts-author-color);
+}
+
+.featured{
+    margin-top:3.2rem;
+    margin-bottom:1.6rem;
+}
+.postBlock-text{
+    font-family:var(--bold-font-family);
+    font-size:2.8rem;
+    line-height:4rem;
+    letter-spacing: -0.1rem;
+    margin-bottom:1.6rem;
+}
+.allAuthors{
+    margin-bottom:1.6rem;
+}
+.section-Posts--text{
+    width:100%;
+    max-width:36.9rem;
+    font-family: var(--bold-font-family);
+    font-size:2.4rem;
+    line-height:3.2rem;
+    cursor:pointer;
+}
+.postBlock-smallText{
+    color:var(--featured-smallText-color);
+    font-size:1.6rem;
+    line-height: 2.8rem;
+    margin-bottom:3.2rem;
+}
+
+/*Lines section*/
+.lines{
+    display:flex;
+    justify-content: end;
+}
+.lines-yellowLine{
+    width:100%;
+    max-width:77.9rem;
+    height:2.3rem;
+    background-color:var(--button-secondary-background-color);
+}
+.lines-violetLine{
+    width:100%;
+    max-width:28.2rem;
+    height:2.3rem;
+    background-color:var(--links-color);
+}
+
+/*About us Section*/
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8.2rem;
+    background-color:var(--hover-color);
+    padding:9.6rem 10.8rem 9.6rem 8rem;
+    margin-bottom:12.8rem;
+}
+
+.aboutUs{
+    flex:1 1 0;
+}
+.about-ourMission{
+    flex:1 1 0;
+}
+.aboutUs-title{
+    font-weight:500;
+    letter-spacing: 0.3rem;
+    line-height:2rem;
+    text-transform: uppercase;
+    font-style:normal;
+    color:var(--main-boldText-color);
+
+}
+.aboutUs-article{
+    font-family: var(--bold-font-family);
+    font-weight:700;
+    font-size:3.6rem;
+    line-height:4.8rem;
+    letter-spacing: -0.1rem;
+    color:var(--main-boldText-color);
+    margin-bottom:1.6rem;
+}
+.missionText{
+    font-size:2.8rem;
+    line-height:4rem;
+}
+.aboutUs-article--text{
+    font-weight: 400;
+    line-height:2.8rem;
+}
+.aboutLink{
+    display:block;
+    color:var(--links-color);
+    margin-top:1.6rem;
+    font-family:var(--bold-font-family);
+    font-weight:700;
+    font-size:1.8rem;
+    line-height:3.2rem;
+}
+
 /*Media*/
+@media(max-width:1300px){
+    .section-post{
+        justify-content: space-around;
+    }
+}
 @media(max-width:1200px){
     .header-Inner-Text{
         top:4rem;
