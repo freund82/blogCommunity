@@ -304,11 +304,13 @@ nav{
     font-size:3.6rem;
     line-height:4.8rem;
     letter-spacing: -0.1rem;
+    margin-bottom:4.8rem;
 }
 .catagory-section--blocks{
     display:flex;
     flex-wrap:wrap;
     gap:3.2rem;
+    margin-bottom:12.8rem;
 }
 .catagory-block{
     width:29.6rem;
@@ -337,6 +339,38 @@ nav{
 .category-block--smallText{
     line-height:2.8rem;
     color:var(--featured-smallText-color);
+}
+
+/*Special Post*/
+.specialPost{
+    position:relative;
+    z-index:100;
+    line-height: 0;
+}
+.specialPost-content{
+    width:100%;
+    max-width:70.6rem;
+    padding:8rem;
+}
+.specialPost-content{
+    position:absolute;
+    top:12.1rem;
+    right:0;
+    z-index:1000;
+    background:#fff;
+}
+.specialPostTitle{
+    font-size:4.8rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.2rem;
+    margin-top:2.4rem;
+}
+.specialPostSmallText{
+    line-height:2.8rem;
+}
+.specialPostBtn{
+    margin-top:3.2rem;
+    height:5.6rem;
 }
 
 /*Media*/
