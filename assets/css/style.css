@@ -38,6 +38,7 @@ p{
     --posts-author-color:#4C4C4C;
     --featured-smallText-color:#6D6E76;
     --icons-background-color:#FBF6EA;
+    --listAuthors-background-color:#F4F4F4;
 }
 
 .container{
@@ -346,6 +347,7 @@ nav{
     position:relative;
     z-index:100;
     line-height: 0;
+    margin-bottom:12.8rem;
 }
 .specialPost-content{
     width:100%;
@@ -371,6 +373,39 @@ nav{
 .specialPostBtn{
     margin-top:3.2rem;
     height:5.6rem;
+}
+
+/*List Of Authors*/
+.listOfAuthors-info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:3.2rem;
+    justify-content: space-around;
+}
+.listOfAuthors-info--Block{
+    width:29.6rem;
+    padding:4rem 2.8rem;
+    background:var(--listAuthors-background-color);
+}
+.listOfAutorsPhoto{
+    display:block;
+    margin: 0 auto;
+}
+.listOfAuthorsTitle{
+    margin-top:2rem;
+    text-align: center;
+}
+.listOfAuthors-smallText{
+    font-size:1.4rem;
+    color:var(--featured-smallText-color);
+    line-height:2rem;
+    text-align: center;
+    margin-bottom:2rem;
+}
+.listOfAuthor-icons{
+    color:var(--main-boldText-color);
+    text-align: center;
+    letter-spacing: 0.6rem;
 }
 
 /*Media*/
